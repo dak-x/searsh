@@ -9,7 +9,7 @@ use recap::Recap;
 //recap because https://docs.rs/recap/latest/recap/ of string parsing
 //other used as standard libraries
 
-#[recap(regex = r"<\s*(?P<word1>-?\w)>.*<\s*(?P<velocity_x>-?\w)>.*<\s*(?P<velocity_x>-?\w)>")]
+#[recap(regex = r"\s*(?P<word1>-?\w).*\s*(?P<operator_type>-?\w).*\s*(?P<word2>-?\w)")]
 
 type QueryNode = Box<QueryType>;
 #[non_exhaustive]
